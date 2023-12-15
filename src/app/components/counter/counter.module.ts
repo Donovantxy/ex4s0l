@@ -1,0 +1,23 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { MatCardModule } from '@angular/material/card';
+import { CounterComponent } from './counter.component';
+import { MatButtonModule } from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+
+
+@NgModule({
+  declarations: [CounterComponent],
+  imports: [
+    CommonModule,
+    MatCardModule,
+    MatButtonModule,
+    FormsModule,
+    MatInputModule,
+    MatIconModule
+  ],
+  exports: [CounterComponent]
+})
+export class CounterModule { }
